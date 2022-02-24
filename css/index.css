@@ -1,0 +1,660 @@
+* {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0px;
+    padding: 0px;
+    box-shadow: border-box;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding:  0rem 1rem !important;
+}
+
+#navbar_hero_overlay_combined {
+    position: relative;
+    background-image: url("../images/hero_image.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar_hero_overlay_combined_container {
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.hero-container {
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    padding-top: 100px; 
+}
+.hero-section-header {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #ffffff;
+}
+
+#hero-section-text {
+    max-width: 1140px;
+    margin: auto;
+    color: rgb(220, 220, 220);
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section-header > h1 {font-size: 56px;}
+    .hero-section-header > p {font-size: 36px;}
+    
+}
+
+h1 {
+    padding: 100px 15px 15px 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+.logistics-partner-container {
+    margin-bottom: ;
+}
+
+.about-container {
+    margin-top: 100px;
+}
+
+.founder-container, .technology-partner-container,
+.logistics-partner-container, .about-container,
+.associated-companies-container, .team-capabilities-container, 
+.footer-block-group{
+    position: relative;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.associated-companies-container > h1 {
+    padding: 70px 15px 15px 15px !important;
+}
+
+@media (max-width: 768px) {
+    .founder-container, .technology-partner-container,
+    .logistics-partner-container, .about-container, 
+    .team-capabilities-container,
+    .footer-block-group{
+        max-width: 1140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .founder-img-block {
+        order: 1;
+    }
+
+    .founder-details-block {
+        order: 2;
+    }
+
+    .technology-partner-img-block {
+        order: 1;
+    }
+
+    .technology-partner-details-block {
+        order: 2;
+    }
+
+    .logistics-partner-img-block {
+        order: 1;
+    }
+
+    .logistics-partner-details-block {
+        order: 2;
+    }
+}
+
+@media (min-width: 769px) {
+    .founder-img-block {
+        order: 1;
+    }
+
+    .founder-details-block {
+        order: 2;
+    }
+
+    .technology-partner-img-block {
+        order: 2;
+    }
+
+    .technology-partner-details-block {
+        order: 1;
+    }
+
+    .logistics-partner-img-block {
+        order: 1;
+    }
+
+    .logistics-partner-details-block {
+        order: 2;
+    }
+}
+
+.founder-details-block, .founder-img-block {
+    width: 50%;
+    padding: 15px;
+    margin-top: 50px
+}
+
+.technology-partner-details-block, .technology-partner-img-block,
+.logistics-partner-details-block, .logistics-partner-img-block {
+    width: 50%;
+    padding: 15px;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .founder-details-block, .founder-img-block {
+        min-height: ;
+        margin-top: 50px
+    }
+    .technology-partner-details-block, .technology-partner-img-block,
+    .logistics-partner-details-block, .logistics-partner-img-block {
+        min-height: ;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 769px) {
+    .founder-details-block, .founder-img-block {
+        min-height: 655px;
+        margin-top: 50px
+    }
+    .technology-partner-details-block, .technology-partner-img-block,
+    .logistics-partner-details-block, .logistics-partner-img-block {
+        min-height: 655px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .founder-details-block, .founder-img-block, .technology-partner-details-block, .technology-partner-img-block,
+    .logistics-partner-details-block, .logistics-partner-img-block {
+        width: 100% !important;
+        padding: 15px;
+    } 
+}
+
+.founder-img-block, .technology-partner-img-block, .logistics-partner-img-block {
+    order: 1;
+}
+
+.founder-details-block, .founder-img-block{
+    width: 50%;
+    padding: 15px;
+}
+
+.founder-img-block > img, .logistics-partner-img-block > img {
+    width: 100%;
+    transition: transform .5s, transform .5s;
+}
+
+.technology-partner-img-block > img {
+    width: 100%;
+    transition: transform .5s, transform .5s;
+}
+
+.founder-img-block > img:hover, .logistics-partner-img-block > img:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.technology-partner-img-block > img:hover {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+.about-block {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    width: 33.33%;
+    padding: 50px 25px 25px 25px;
+    transition: background-color 1s, color 1s;
+}
+
+@media (max-width: 768px) {
+    .about-block {
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        padding: 30px 15px 15px 15px;
+        transition: background-color 1s, color 1s;
+    }
+}
+
+.about-block span:nth-child(odd){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.about-block span:nth-child(even){
+  position: absolute;
+  top: 120px;
+  left: -150px;
+  width: 680px;
+  height: 400px;
+  display: block;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+@media (max-width: 1168px) {
+    .about-block span:nth-child(even) {display: none;}
+    .about-block span:nth-child(odd) {display: none;}
+}
+
+.about-block span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.about-block span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.about-block span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.about-block span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+.about-block span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+  
+  
+} 
+
+.fontawesome-icons {
+    position: relative;
+    display: none;
+    width: 30%;
+    min-width: 130px;
+    justify-content: center;
+    background-color: #30B342;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa {
+    padding: 10px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.fa:hover {
+   transform: scale(1.2);
+}
+
+.about-img {
+    display: block;
+    background-color: ;
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-img {
+    background-color: #000000;
+    position: relative;
+    height: 100px;
+}
+
+.div-img img {
+    position: absolute;
+}
+.about-block:hover {
+    background-color: #30B342;
+    color: #ffffff;
+}
+
+.associated-companies-container {
+    position: relative;
+    background-image: url("../images/laptop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.associated-companies-container > p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (min-width: 769px) {
+    .associated-companies-container > p { font-size: 36px;}
+}
+
+@media (max-width: 768px) {
+    .associated-companies-container > p { font-size: 16px;}
+}
+
+.associated-companies-logo {
+    width: 150px;
+    min-height: 0px;
+}
+
+.associated-companies-group-1, .associated-companies-group-2 {
+    width: 50%;
+    padding: 15px;
+}
+
+.associated-companies-group-2 {
+    text-align: right;
+}
+
+ul {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 0;
+    display: inline;
+}
+
+.associated-companies-container-block {
+    padding-top: 25px;
+    min-height: 320px;
+}
+
+
+@media (max-width: 768px) {
+    .associated-companies-container {
+        background-image: url();
+    }
+}
+
+.numbers-highlight, .units-highlight {
+    color: rgb(48, 179, 66);
+}
+
+.numbers-highlight {font-weight: bold; font-size: 36px;}  
+
+.units-highlight {font-weight: bold; font-size: 36px;}  
+
+.team-capabilities-container {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+   .team-capabilities-right-section {
+        width: 100% !important;
+    }
+    .team-capabilities-left-section {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        width: 100% !important;
+    }
+}
+
+.team-capabilities-right-section {
+    width: 50%;
+}
+
+.team-capabilities-left-section {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    padding: 15px;
+    width: 50%;
+}
+
+.team-capabilities-left-section > p:nth-child(odd){
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.team-capabilities-block-group-1,
+.team-capabilities-block-group-2,
+.team-capabilities-block-group-3 {
+    display: flex;
+    justify-content: center;
+} 
+
+.team-capabilities-block {
+    width: 25.33%;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .team-capabilities-block {width: 33.33%;}
+}
+
+@media (max-width: 778px) {
+    width: 100%;
+    padding: 15px;
+}
+
+.team-capabilities-icon {
+    width: 70%;
+    transition: all 1s;
+}
+
+.team-capabilities-icon:hover {
+    transform: scale(1.5);
+}
+
+.footer {
+    background-image: url("../images/hero_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-container {
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.footer-block-group {
+    padding: 70px 0 50px 0;
+}
+
+.footer-block{
+    color: #ffffff;
+    width: 25%;
+    padding: 15px;
+}
+
+.footer-block > p {
+    padding-top: 15px;
+}
+
+@media (max-width: 778px) {
+    .footer-block {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-block-group {
+        padding: 25px;
+    }
+}
+
+.footer-copy-right {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {visibility: visible; animation:slide 1s;}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+.shape {
+    position: absolute;
+    z-index: -1;
+    background-color: #bfffc8;
+}
+
+@media (max-width: 768px) {
+   .shape {
+        top: 20px;
+        width: 100%;
+        height: 500px;
+        border-radius: 100% 0% 52% 48% / 52% 94% 6% 48%;
+    } 
+}
+
+@media (min-width: 769px) {
+    .shape {
+        top: 20px;
+        right: 15px;
+        width: 80%;
+        height: 530px;
+        border-radius: 60% 40% 55% 45% / 48% 97% 3% 52% ; 
+    } 
+}
+
+.shapes-company {
+    position: absolute;
+    z-index: -1;
+    background-color: #bfffc8;
+}
+
+@media (max-width: 768px) {
+   .shapes-company {
+        top: -150px;
+        right: 0px;
+        width: 400px;
+        height: 500px;
+        border-radius: 61% 39% 0% 100% / 30% 8% 92% 70% ;
+    } 
+}
+
+@media (min-width: 769px) {
+    .shapes-company {
+        top: 6%;
+        left: 15%;
+        width: 400px;
+        height: 400px;
+        border-radius: 52% 48% 47% 53% / 50% 49% 51% 50% ; 
+    } 
+}
+
+.shapes-hero {
+    position: absolute;
+    z-index: -1;
+    background-color: #bfffc8;
+}
+
+@media (max-width: 768px) {
+   .shapes-hero {
+       display: none;
+        
+    } 
+}
+
+@media (min-width: 769px) {
+    .shapes-hero {
+        bottom: -150px;
+        right: 0px;
+        width: 50%;
+        height: 530px;
+        border-radius: 53% 45% 47% 57% / 45% 37% 29% 55% ;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
