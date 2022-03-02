@@ -10,6 +10,24 @@
     padding:  0rem 1rem !important;
 }
 
+.nav-link {
+    color: #fff;
+    font-family: 'Montserrat' !important;
+    letter-spacing: 1.5px !important;
+}
+
+@media (max-width: 976px) {
+    .vertical-line {
+        display: none;
+    }
+}
+
+@media (min-width: 977px) {
+    .vertical-line {
+        display: inline;
+    }
+}
+
 #navbar_hero_overlay_combined {
     position: relative;
     background-image: url("../images/hero_image.jpg");
@@ -39,6 +57,10 @@
     color: #ffffff;
 }
 
+.hero-section-header > p {
+    letter-spacing: 1px;
+}
+
 #hero-section-text {
     max-width: 1140px;
     margin: auto;
@@ -46,6 +68,7 @@
     padding: 15px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -58,6 +81,18 @@ h1 {
     padding: 100px 15px 15px 15px;
     font-family: 'Red Hat Display', sans-serif;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section-header > h1 {
+        padding: 50px 15px 15px 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-section-header > h1 {
+        padding: 100px 15px 15px 15px;
+    }
 }
 
 .logistics-partner-container {
