@@ -6,23 +6,38 @@
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: transparent
     padding:  0rem 1rem !important;
+}
+
+.navbar-brand {
+    margin-left: 15px;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff !important;
+}
+
+.fa-bars {
+    color:#ffffff;
+    font-size:28px;
 }
 
 .nav-link {
     color: #fff;
     font-family: 'Montserrat' !important;
     letter-spacing: 1.5px !important;
+    color: #fff !important;
+    font-weight: 100;
 }
 
-@media (max-width: 976px) {
+@media (max-width: 990px) {
     .vertical-line {
         display: none;
     }
 }
 
-@media (min-width: 977px) {
+@media (min-width: 991px) {
     .vertical-line {
         display: inline;
     }
@@ -71,7 +86,12 @@
     letter-spacing: 1px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 544px) and (max-width: 768px) {
+    .hero-section-header > p {font-size: 26px;}
+    
+}
+
+@media only screen and (min-width: 769px) {
     .hero-section-header > h1 {font-size: 56px;}
     .hero-section-header > p {font-size: 36px;}
     
@@ -105,7 +125,7 @@ h1 {
 
 .founder-container, .technology-partner-container,
 .logistics-partner-container, .about-container,
-.associated-companies-container, .team-capabilities-container, 
+.associated-companies-container, 
 .footer-block-group{
     position: relative;
     max-width: 1140px;
@@ -116,14 +136,9 @@ h1 {
     margin-right: auto;
 }
 
-.associated-companies-container > h1 {
-    padding: 70px 15px 15px 15px !important;
-}
-
 @media (max-width: 768px) {
     .founder-container, .technology-partner-container,
     .logistics-partner-container, .about-container, 
-    .team-capabilities-container,
     .footer-block-group{
         max-width: 1140px;
         display: flex;
@@ -192,8 +207,7 @@ h1 {
     margin-top: 50px
 }
 
-.technology-partner-details-block, .technology-partner-img-block,
-.logistics-partner-details-block, .logistics-partner-img-block {
+.technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
     width: 50%;
     padding: 15px;
     margin-top: 100px;
@@ -204,8 +218,7 @@ h1 {
         min-height: ;
         margin-top: 50px
     }
-    .technology-partner-details-block, .technology-partner-img-block,
-    .logistics-partner-details-block, .logistics-partner-img-block {
+    .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
         min-height: ;
         margin-top: 50px;
     }
@@ -216,16 +229,14 @@ h1 {
         min-height: 655px;
         margin-top: 50px
     }
-    .technology-partner-details-block, .technology-partner-img-block,
-    .logistics-partner-details-block, .logistics-partner-img-block {
+    .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
         min-height: 655px;
         margin-top: 100px;
     }
 }
 
 @media (max-width: 768px) {
-    .founder-details-block, .founder-img-block, .technology-partner-details-block, .technology-partner-img-block,
-    .logistics-partner-details-block, .logistics-partner-img-block {
+    .founder-details-block, .founder-img-block, .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
         width: 100% !important;
         padding: 15px;
     } 
@@ -433,6 +444,7 @@ h1 {
 .associated-companies-group-1, .associated-companies-group-2 {
     width: 50%;
     padding: 15px;
+    text-align: left;
 }
 
 .associated-companies-group-2 {
@@ -458,16 +470,38 @@ ul {
     }
 }
 
-.numbers-highlight, .units-highlight {
-    color: rgb(48, 179, 66);
+
+.team-capabilities-left-section p {
+    color: #fff;
+    font-size: 18px;
 }
 
-.numbers-highlight {font-weight: bold; font-size: 36px;}  
+.numbers-highlight, .units-highlight {
+    color: #fff;
+}
 
-.units-highlight {font-weight: bold; font-size: 36px;}  
+.numbers-highlight {font-weight: bold; font-size: 56px;}  
+
+.units-highlight {font-weight: bold; font-size: 56px;}  
 
 .team-capabilities-container {
+    
     text-align: center;
+}
+
+#team-capabilities-header-para {
+    margin-top: 100px;
+    font-family:  Open Sans, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.team-capabilities-right-section {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
 }
 
 @media (max-width: 768px) {
@@ -478,20 +512,44 @@ ul {
         margin-top: auto;
         margin-bottom: auto;
         text-align: left;
-        width: 100% !important;
     }
 }
 
 .team-capabilities-right-section {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;  
+}
+
+.team-capabilities-right-section p {
+    font-size: 18px;
+}
+
+.team-capabilities-right-section .numbers-highlight {
+    color: #30B342;
+}
+
+.team-capabilities-right-section .units-highlight {
+    color: #30B342;
 }
 
 .team-capabilities-left-section {
-    margin-top: auto;
-    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #30B342;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     padding: 15px;
-    width: 50%;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.team-capabilities-stats-1, .team-capabilities-stats-2,
+.team-capabilities-stats-3, .team-capabilities-stats-4 {
+    width: 33.33%;
+    padding: 50px 0 50px 0;
+    text-align: center;
 }
 
 .team-capabilities-left-section > p:nth-child(odd){
@@ -515,18 +573,17 @@ ul {
     .team-capabilities-block {width: 33.33%;}
 }
 
-@media (max-width: 778px) {
-    width: 100%;
-    padding: 15px;
-}
-
 .team-capabilities-icon {
     width: 70%;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
 }
 
 .team-capabilities-icon:hover {
     transform: scale(1.5);
+}
+
+.associated-companies-section > h1 {
+    padding-top: 50px !important; 
 }
 
 .footer {
