@@ -582,6 +582,36 @@ ul {
     transform: scale(1.5);
 }
 
+.slider {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1224px;
+    height: 200px; 
+    overflow-x: hidden;
+}
+
+.slider img {
+    width: 80px;
+    height: 80px;
+}
+
+.slider-card {
+    width: 208px;
+    transition: all 1s ease-in-out;
+}
+
+.slider-card-group {
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.card-content {
+    width: inherit; 
+}
+
 .associated-companies-section > h1 {
     padding-top: 50px !important; 
 }

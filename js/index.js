@@ -102,6 +102,27 @@ $(function () {
         $(window).on("scroll", reset);
     });
 
+var i = 0;
+setInterval(slider, 2000);
+
+function slider() {
+    var elem = document.getElementsByClassName("slider-card-group"); 
+    
+    if(i==0) {
+        elem[elem.length-1].style.display="none";
+    }else {
+        elem[i-1].style.display="none";
+    }
+    elem[i].style.display="flex";
+    i++;
+    
+    if(i==elem.length){
+        i = 0;
+        }
+}
+
+
+
 
 
 
