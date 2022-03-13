@@ -1,0 +1,7 @@
+# Color Code of Green #
+background-color: #30B342;
+
+# Media Query #
+@media (max-width: 768px) {
+
+}

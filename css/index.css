@@ -476,13 +476,55 @@ ul {
     font-size: 18px;
 }
 
+@media (max-width: 768px) {
+    .team-capabilities-left-section  p {
+        font-size: 16px !important;
+    }
+}
+
 .numbers-highlight, .units-highlight {
     color: #fff;
 }
 
-.numbers-highlight {font-weight: bold; font-size: 56px;}  
+.numbers-highlight {
+    font-weight: bold;
+    font-size: 56px;
+}  
 
-.units-highlight {font-weight: bold; font-size: 56px;}  
+.units-highlight {
+    font-weight: bold;
+    font-size: 56px;
+}  
+
+@media (max-width: 768px) {
+    .numbers-highlight {
+        font-size: 36px;
+    }  
+
+    .units-highlight {
+        font-size: 36px;
+    }    
+}
+
+@media (max-width: 768px) {
+    #visible-big-screen {
+        display: none;
+    }
+    
+    #visible-small-screen {
+        display: inline;
+    }
+}
+
+@media (min-width: 769px) {
+    #visible-big-screen {
+        display: inline;
+    }
+    
+    #visible-small-screen {
+        display: none;
+    }
+}
 
 .team-capabilities-container {
     
@@ -538,7 +580,6 @@ ul {
     flex-direction: row;
     background-color: #30B342;
     justify-content: center;
-    align-items: center;
     text-align: left;
     padding: 15px;
     width: 100%;
@@ -548,7 +589,7 @@ ul {
 .team-capabilities-stats-1, .team-capabilities-stats-2,
 .team-capabilities-stats-3, .team-capabilities-stats-4 {
     width: 33.33%;
-    padding: 50px 0 50px 0;
+    padding: 50px 15px 50px 15px;
     text-align: center;
 }
 
@@ -587,20 +628,29 @@ ul {
     flex-flow: nowrap;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    width: 1224px;
     height: 200px; 
     overflow-x: hidden;
 }
 
 .slider img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
-.slider-card {
+.slider-card-group > .slider-card {
     width: 208px;
     transition: all 1s ease-in-out;
+}
+
+.slider-header-card-group {
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.slider-header-card-group  h2 {
+    font-size: 46px;
+    color: #fff !important;
+    font-weight: 600;
 }
 
 .slider-card-group {

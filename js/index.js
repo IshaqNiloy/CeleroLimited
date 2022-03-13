@@ -103,16 +103,21 @@ $(function () {
     });
 
 var i = 0;
-setInterval(slider, 2000);
+setInterval(slider, 3000);
 
 function slider() {
     var elem = document.getElementsByClassName("slider-card-group"); 
     
     if(i==0) {
+        //elem[elem.length-1].style.opacity="0";
         elem[elem.length-1].style.display="none";
+        //elem[elem.length-1].style.height="0";
     }else {
+        //elem[i-1].style.opacity="0";
         elem[i-1].style.display="none";
+        //elem[elem.length-1].style.height="0";
     }
+    //elem[i].style.opacity="1";
     elem[i].style.display="flex";
     i++;
     
@@ -122,7 +127,29 @@ function slider() {
 }
 
 
+var j = 0;
+setInterval(sliderHeader, 3000);
 
+function sliderHeader() {
+    var elem = document.getElementsByClassName("slider-header-card-group"); 
+    
+    if(j==0) {
+        //elem[elem.length-1].style.opacity="0";
+        elem[elem.length-1].style.display="none";
+        //elem[elem.length-1].style.height="0";
+    }else {
+        //elem[i-1].style.opacity="0";
+        elem[j-1].style.display="none";
+        //elem[elem.length-1].style.height="0";
+    }
+    //elem[i].style.opacity="1";
+    elem[j].style.display="flex";
+    j++;
+    
+    if(j==elem.length){
+        j = 0;
+        }
+}
 
 
 
