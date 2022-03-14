@@ -103,22 +103,51 @@ $(function () {
     });
 
 var i = 0;
+var m = 0;
 setInterval(slider, 3000);
 
 function slider() {
-    var elem = document.getElementsByClassName("slider-card-group"); 
+    const iconDict = {
+        "group 1": ["images/icons/mfs.png", "images/icons/tie.png", "images/icons/distribution.png"],
+        "group 2": ["images/icons/wireless_to_cashless.png", "images/icons/team.png", "images/icons/telecom.png"],
+        "group 3": ["images/icons/tech.png", "images/icons/app.png", "images/icons/gis.png"],
+    };
+    
+    const paraDict = {
+        "group 1": ["Establishing 2 MFS companies from scratch", "Strong tie with existing partners", "Own distribution business"],
+        "group 2": ["20+yrs Experience from wireless to cash less", "Team experience in MFS/ Telecom/FMCG", "Partnership with Fis/ Telecom / MFS"],
+        "group 3": ["Association with global tech partners", "ERP & Apps(KIU)", "GIS platform (ESRI)"],
+    };
+    
+    
+    const elem = document.getElementsByClassName("slider-card-group");
+    const teamCapabilitiesIcon = document.getElementsByClassName("team-capabilities-icon");
+    const teamCapabilitiesPara = document.getElementsByClassName("team-capabilities-para"); 
+    const keysArr = Object.keys(iconDict);
+    
+    
+    for(var n = 0; n < 3; n++){
+        teamCapabilitiesIcon[n].src = iconDict[keysArr[m]][n];
+        teamCapabilitiesPara[n].innerHTML = paraDict[keysArr[m]][n];
+    }
+    
+    m++;
+    
+    if(m > 2) {
+        m = 0;
+    }
     
     if(i==0) {
-        //elem[elem.length-1].style.opacity="0";
-        elem[elem.length-1].style.display="none";
-        //elem[elem.length-1].style.height="0";
+        elem[elem.length-1].style.opacity="0";
+        //elem[elem.length-1].style.display="none";
     }else {
-        //elem[i-1].style.opacity="0";
-        elem[i-1].style.display="none";
-        //elem[elem.length-1].style.height="0";
+        elem[i-1].style.opacity="0";
+        //elem[i-1].style.display="none";
     }
-    //elem[i].style.opacity="1";
-    elem[i].style.display="flex";
+    elem[i].style.opacity="1";
+    //elem[i].style.webkitTransition = 'opacity 1s';
+    //elem[i].style.mozTransition = 'opacity 1s';
+    //elem[i].style.display="flex";
     i++;
     
     if(i==elem.length){
@@ -131,7 +160,9 @@ var j = 0;
 setInterval(sliderHeader, 3000);
 
 function sliderHeader() {
-    var elem = document.getElementsByClassName("slider-header-card-group"); 
+    
+    var elem = document.getElementsByClassName("slider-header-card-group");
+
     
     if(j==0) {
         //elem[elem.length-1].style.opacity="0";
