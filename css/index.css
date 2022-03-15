@@ -98,9 +98,15 @@
 }
 
 h1 {
-    padding: 100px 15px 15px 15px;
+    padding: 80px 15px 80px 15px;
     font-family: 'Red Hat Display', sans-serif;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        padding: 40px 15px 40px 15px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -120,7 +126,7 @@ h1 {
 }
 
 .about-container {
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 
 .founder-container, .technology-partner-container,
@@ -134,6 +140,19 @@ h1 {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 80px 0px 80px 0px;
+}
+
+@media (max-width: 768px) {
+    .founder-container {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+@media (min-width: 769px) {
+    .founder-container {
+        padding: 0px 0px 80px 0px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -203,42 +222,45 @@ h1 {
 
 .founder-details-block, .founder-img-block {
     width: 50%;
-    padding: 15px;
-    margin-top: 50px
 }
 
 .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
     width: 50%;
-    padding: 15px;
-    margin-top: 100px;
+    /*padding-top: 80px;*/
 }
 
 @media (max-width: 768px) {
     .founder-details-block, .founder-img-block {
-        min-height: ;
-        margin-top: 50px
+        margin-top: 50px;
     }
     .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
         min-height: ;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
 }
 
 @media (min-width: 769px) {
     .founder-details-block, .founder-img-block {
         min-height: 655px;
-        margin-top: 50px
     }
-    .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
+    .technology-partner-details-block, .logistics-partner-img-block {
         min-height: 655px;
-        margin-top: 100px;
+        /*margin-top: 100px;*/
+        padding-right: 15px;
+    }
+    
+    .technology-partner-img-block, .logistics-partner-details-block {
+        min-height: 655px;
+        /*margin-top: 100px;*/
+        padding-left: 15px;
     }
 }
 
 @media (max-width: 768px) {
     .founder-details-block, .founder-img-block, .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
         width: 100% !important;
-        padding: 15px;
+        padding: 0px 15px 0px 15px;
+        
     } 
 }
 
@@ -248,7 +270,20 @@ h1 {
 
 .founder-details-block, .founder-img-block{
     width: 50%;
-    padding: 15px;
+}
+
+.founder-details-block {
+    padding-left: 15px;
+}
+
+.founder-img-block {
+    padding-right: 15px;
+}
+
+@media (max-width: 1182px) {
+    .founder-details-block, .founder-img-block, .technology-partner-details-block, .technology-partner-img-block  {
+        padding: 0px 15px 0px 15px;
+    }
 }
 
 .founder-img-block > img, .logistics-partner-img-block > img {
@@ -273,7 +308,7 @@ h1 {
     position: relative;
     font-family: 'Open Sans', sans-serif;
     width: 33.33%;
-    padding: 50px 25px 25px 25px;
+    padding: 0px 25px 0px 25px;
     transition: background-color 1s, color 1s;
 }
 
@@ -532,12 +567,12 @@ ul {
 }
 
 #team-capabilities-header-para {
-    margin-top: 100px;
     font-family:  Open Sans, sans-serif;
     letter-spacing: 1px;
     font-size: 20px;
     font-weight: 600;
-    padding-bottom: 50px;
+    padding: 80px 0px 80px 0px;
+    margin-bottom: 0px;
 }
 
 .team-capabilities-right-section {
@@ -583,13 +618,12 @@ ul {
     text-align: left;
     padding: 15px;
     width: 100%;
-    margin-top: 80px;
 }
 
 .team-capabilities-stats-1, .team-capabilities-stats-2,
 .team-capabilities-stats-3, .team-capabilities-stats-4 {
     width: 33.33%;
-    padding: 50px 15px 50px 15px;
+    padding: 40px 15px 40px 15px;
     text-align: center;
 }
 
@@ -628,8 +662,12 @@ ul {
     flex-flow: nowrap;
     justify-content: center;
     align-items: center;
-    height: 200px; 
     overflow-x: hidden;
+    padding: 80px 0px 80px 0px;
+}
+
+@media (max-width: 768px) {
+    padding: 40px 0px 40px 0px;
 }
 
 .slider img {
@@ -664,7 +702,8 @@ ul {
 }
 
 .associated-companies-section > h1 {
-    padding-top: 50px !important; 
+    padding-top: 50px !important;
+    padding-bottom: 0px;
 }
 
 .footer {
@@ -707,6 +746,9 @@ ul {
     padding-bottom: 30px;
 }
 
+.slideanim {
+    margin-bottom: 0px;
+}
 .slideanim {
     visibility:hidden;
     visibility:visible\9;/*For old IE browsers IE6-8 */
