@@ -562,8 +562,11 @@ ul {
 }
 
 .team-capabilities-container {
-    
     text-align: center;
+}
+
+.team-capabilities-container:nth-child(2) {
+    padding-bottom: 40px !important;
 }
 
 #team-capabilities-header-para {
@@ -571,7 +574,7 @@ ul {
     letter-spacing: 1px;
     font-size: 20px;
     font-weight: 600;
-    padding: 80px 0px 80px 0px;
+    padding: 80px 0px 40px 0px;
     margin-bottom: 0px;
 }
 
@@ -579,6 +582,7 @@ ul {
     width: 100%;
     display: flex;
     flex-flow: row;
+    padding-bottom:40px;
 }
 
 @media (max-width: 768px) {
@@ -649,12 +653,13 @@ ul {
 }
 
 .team-capabilities-icon {
-    width: 70%;
+    width: 150px !important;
+    height: 150px !important;
     transition: all 1s ease-in-out;
 }
 
-.team-capabilities-icon:hover {
-    transform: scale(1.5);
+.team-capabilities-icon {
+    
 }
 
 .slider {
@@ -677,7 +682,7 @@ ul {
 
 .slider-card-group > .slider-card {
     width: 208px;
-    transition: all 1s ease-in-out;
+    padding: 15px;  
 }
 
 .slider-header-card-group {
@@ -702,8 +707,8 @@ ul {
 }
 
 .associated-companies-section > h1 {
-    padding-top: 50px !important;
-    padding-bottom: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .footer {
