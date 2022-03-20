@@ -454,6 +454,7 @@ h1 {
     background-image: url("../images/laptop.png");
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 40px;  
 }
 
 .associated-companies-container > p {
@@ -513,9 +514,11 @@ ul {
 
 @media (max-width: 768px) {
     .team-capabilities-left-section  p {
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 }
+
+
 
 .numbers-highlight, .units-highlight {
     color: #fff;
@@ -533,11 +536,11 @@ ul {
 
 @media (max-width: 768px) {
     .numbers-highlight {
-        font-size: 36px;
+        font-size: 26px;
     }  
 
     .units-highlight {
-        font-size: 36px;
+        font-size: 26px;
     }    
 }
 
@@ -606,6 +609,12 @@ ul {
     font-size: 18px;
 }
 
+@media (max-width: 768px) {
+    .team-capabilities-right-section  p {
+        font-size: 14px !important;
+    }
+}
+
 .team-capabilities-right-section .numbers-highlight {
     color: #30B342;
 }
@@ -663,6 +672,7 @@ ul {
 }
 
 .slider {
+    min-height: 255px;
     display: flex;
     flex-flow: nowrap;
     justify-content: center;
@@ -672,7 +682,9 @@ ul {
 }
 
 @media (max-width: 768px) {
-    padding: 40px 0px 40px 0px;
+    .slider {
+          
+    }
 }
 
 .slider img {
@@ -683,6 +695,13 @@ ul {
 .slider-card-group > .slider-card {
     width: 208px;
     padding: 15px;  
+}
+
+@media (max-width: 768px) {
+    .slider-card-group > .slider-card {
+        width: 208px;
+        padding: 15px;  
+    }
 }
 
 .slider-header-card-group {
@@ -704,6 +723,13 @@ ul {
 
 .card-content {
     width: inherit; 
+}
+
+
+@media (max-width: 768px) {
+    .card-content > h2 {
+        font-size: 36px;
+    }
 }
 
 .associated-companies-section > h1 {
