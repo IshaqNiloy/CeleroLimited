@@ -143,9 +143,17 @@ h1 {
     padding: 80px 0px 80px 0px;
 }
 
+.about-container {
+    padding: 55px 0px 80px 0px;
+}
+
 @media (max-width: 768px) {
-    .founder-container {
+    .about-container, .logistics-partner-container, .logistics-partner-container, .technology-partner-container  {
         padding: 40px 0px 40px 0px;
+    }
+    
+    .founder-container {
+        padding: 0px 0px 40px 0px;
     }
 }
 
@@ -226,16 +234,16 @@ h1 {
 
 .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
     width: 50%;
-    /*padding-top: 80px;*/
+    padding-left: 15px;
 }
 
 @media (max-width: 768px) {
-    .founder-details-block, .founder-img-block {
-        margin-top: 50px;
+    .founder-details-block, .technology-partner-details-block, .logistics-partner-details-block {
+        padding-top: 40px !important;
     }
     .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
-        min-height: ;
-        /*margin-top: 50px;*/
+        /*min-height: ;
+        margin-top: 50px;*/
     }
 }
 
@@ -246,7 +254,7 @@ h1 {
     .technology-partner-details-block, .logistics-partner-img-block {
         min-height: 655px;
         /*margin-top: 100px;*/
-        padding-right: 15px;
+        /*padding-right: 15px;*/
     }
     
     .technology-partner-img-block, .logistics-partner-details-block {
@@ -308,7 +316,7 @@ h1 {
     position: relative;
     font-family: 'Open Sans', sans-serif;
     width: 33.33%;
-    padding: 0px 25px 0px 25px;
+    padding: 25px 25px 0px 25px;
     transition: background-color 1s, color 1s;
 }
 
@@ -475,6 +483,7 @@ h1 {
 .associated-companies-logo {
     width: 150px;
     min-height: 0px;
+    margin-bottom: 15px;
 }
 
 .associated-companies-group-1, .associated-companies-group-2 {
@@ -544,7 +553,7 @@ ul {
     }    
 }
 
-@media (max-width: 768px) {
+@media (max-width: 927px) {
     #visible-big-screen {
         display: none;
     }
@@ -554,7 +563,7 @@ ul {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 928px) {
     #visible-big-screen {
         display: inline;
     }
@@ -577,7 +586,7 @@ ul {
     letter-spacing: 1px;
     font-size: 20px;
     font-weight: 600;
-    padding: 80px 0px 40px 0px;
+    padding: 80px 15px 40px 15px;
     margin-bottom: 0px;
 }
 
@@ -629,8 +638,9 @@ ul {
     background-color: #30B342;
     justify-content: center;
     text-align: left;
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
     width: 100%;
+    overflow: hidden;
 }
 
 .team-capabilities-stats-1, .team-capabilities-stats-2,
@@ -667,12 +677,27 @@ ul {
     transition: all 1s ease-in-out;
 }
 
-.team-capabilities-icon {
-    
+@media (max-width: 768px) {
+    .team-capabilities-icon {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+.team-capabilities-para {
+    width: 100%;
+    margin: 0px !important;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .team-capabilities-para {
+        font-size: 14px;
+    }
 }
 
 .slider {
-    min-height: 255px;
     display: flex;
     flex-flow: nowrap;
     justify-content: center;
@@ -682,26 +707,42 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .slider {
-          
+    .slider:nth-child(2) {
+        min-height: 285px;  
     }
 }
 
-.slider img {
-    width: 100px;
-    height: 100px;
+@media (min-width: 769px) {
+    .slider:nth-child(2) {
+        min-height: 255px;  
+    }
+}
+
+@media (max-width: 768px) {
+    .slider:nth-child(3) {
+        min-height: 390px;  
+    }
+}
+
+@media (min-width: 769px) {
+    .slider:nth-child(3) {
+        min-height: 467px;  
+    }
 }
 
 .slider-card-group > .slider-card {
-    width: 208px;
-    padding: 15px;  
+    padding: 30px;  
 }
 
 @media (max-width: 768px) {
     .slider-card-group > .slider-card {
-        width: 208px;
+        width: 100%;
         padding: 15px;  
     }
+}
+
+.slider-header-card-group .card-content {
+    width: inherit;
 }
 
 .slider-header-card-group {
@@ -722,9 +763,21 @@ ul {
 }
 
 .card-content {
-    width: inherit; 
+    width: 300px;
 }
 
+
+@media (max-width: 1100px) {
+    .card-content {
+        width: 200px;
+    }
+}
+
+@media (max-width: 680px) {
+    .card-content {
+        width: 100px; 
+    }
+}
 
 @media (max-width: 768px) {
     .card-content > h2 {

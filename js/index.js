@@ -85,9 +85,14 @@ $(function () {
         };
         
         var reset = function reset() {
-          console.log($(this).scrollTop());
+          // console.log($(this).scrollTop());
             // do stuff when window `.scrollTop()` > 75
-            if ($(this).scrollTop() > 3550) {
+        
+            var teamCapabilitiesLeftSection = $(".team-capabilities-left-section").offset().top - 200;
+            
+            var teamCapabilitiesRightSection = $(".team-capabilities-right-section").offset().top;
+            
+            if ($(this).scrollTop() > teamCapabilitiesLeftSection) {
               // turn off scroll event so `fx` not called
               // during ongoing animation
               $(this).off("scroll");
