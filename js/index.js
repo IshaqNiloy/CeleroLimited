@@ -107,6 +107,43 @@ $(function () {
         $(window).on("scroll", reset);
     });
 
+//shows font awesome icons on the images
+var fontAwesomeIconsDiv = document.getElementsByClassName('fontawesome-icons');
+
+document.getElementsByClassName('founder-img-block')[0].onmouseover = function() {
+    fontAwesomeIconsDiv[0].style.opacity = '1';
+    fontAwesomeIconsDiv[0].style.bottom = '70px';
+}
+
+document.getElementsByClassName('founder-img-block')[0].onmouseout = function() {
+    fontAwesomeIconsDiv[0].style.opacity = '0';
+    fontAwesomeIconsDiv[0].style.bottom = '50px';
+}
+
+document.getElementsByClassName('technology-partner-img-block')[0].onmouseover = function() {
+    fontAwesomeIconsDiv[1].style.opacity = '1';
+    fontAwesomeIconsDiv[1].style.bottom = '70px';
+}
+
+document.getElementsByClassName('technology-partner-img-block')[0].onmouseout = function() {
+    fontAwesomeIconsDiv[1].style.opacity = '0';
+    fontAwesomeIconsDiv[1].style.bottom = '50px';
+}
+
+document.getElementsByClassName('logistics-partner-img-block')[0].onmouseover = function() {
+    fontAwesomeIconsDiv[2].style.opacity = '1';
+    fontAwesomeIconsDiv[2].style.bottom = '70px';
+}
+
+document.getElementsByClassName('logistics-partner-img-block')[0].onmouseout = function() {
+    fontAwesomeIconsDiv[2].style.opacity = '0';
+    fontAwesomeIconsDiv[2].style.bottom = '50px';
+}
+                
+//end
+                
+//slider
+
 var i = 0;
 var m = 0;
 setInterval(slider, 3000);
@@ -157,7 +194,7 @@ function slider() {
     
     if(i==elem.length){
         i = 0;
-        }
+    }
 }
 
 

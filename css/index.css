@@ -230,16 +230,22 @@ h1 {
 
 .founder-details-block, .founder-img-block {
     width: 50%;
+    overflow: hidden;
 }
 
 .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
     width: 50%;
     padding-left: 15px;
+    overflow: hidden;
+}
+
+.technology-partner-details-block, .logistics-partner-img-block {
+    padding: 0 15px 0 0;
 }
 
 @media (max-width: 768px) {
     .founder-details-block, .technology-partner-details-block, .logistics-partner-details-block {
-        padding-top: 40px !important;
+        margin-top: ;
     }
     .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block {
         /*min-height: ;
@@ -289,7 +295,7 @@ h1 {
 }
 
 @media (max-width: 1182px) {
-    .founder-details-block, .founder-img-block, .technology-partner-details-block, .technology-partner-img-block  {
+    .founder-details-block, .founder-img-block, .technology-partner-details-block, .technology-partner-img-block, .logistics-partner-details-block, .logistics-partner-img-block  {
         padding: 0px 15px 0px 15px;
     }
 }
@@ -408,19 +414,17 @@ h1 {
   transform-origin: right;
     
   }
-  
-  
 } 
 
 .fontawesome-icons {
     position: relative;
-    display: none;
-    width: 30%;
-    min-width: 130px;
+    width: 160px;
     justify-content: center;
     background-color: #30B342;
     margin-left: auto;
     margin-right: auto;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
 .fa {
@@ -695,7 +699,7 @@ ul {
     .team-capabilities-para {
         font-size: 14px;
     }
-}
+} 
 
 .slider {
     display: flex;
@@ -704,6 +708,7 @@ ul {
     align-items: center;
     overflow-x: hidden;
     padding: 80px 0px 80px 0px;
+    transition: opacity 1s ease-out;
 }
 
 @media (max-width: 768px) {
