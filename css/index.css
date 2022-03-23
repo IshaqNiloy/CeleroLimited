@@ -143,6 +143,10 @@ h1 {
     padding: 80px 0px 80px 0px;
 }
 
+.associated-companies-container {
+    padding: 80px 0px 0px 0px;
+}
+
 .about-container {
     padding: 55px 0px 80px 0px;
 }
@@ -476,12 +480,33 @@ h1 {
     font-weight: 700;
 }
 
+#gis-para { 
+    font-weight: bold;
+    text-align: center;
+}
+
 @media (min-width: 769px) {
-    .associated-companies-container > p { font-size: 36px;}
+    #gis-para { 
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 768px) {
-    .associated-companies-container > p { font-size: 16px;}
+    #gis-para {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 769px) {
+    #gis-para {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    #gis-para {
+        margin-bottom: 40px;
+    }
 }
 
 .associated-companies-logo {
