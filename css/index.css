@@ -132,7 +132,7 @@ h1 {
 .founder-container, .technology-partner-container,
 .logistics-partner-container, .about-container,
 .associated-companies-container, 
-.footer-block-group{
+.footer-block-group {
     position: relative;
     max-width: 1140px;
     display: flex;
@@ -141,10 +141,6 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 80px 0px 80px 0px;
-}
-
-.associated-companies-container {
-    padding: 80px 0px 0px 0px;
 }
 
 .about-container {
@@ -480,6 +476,14 @@ h1 {
     font-weight: 700;
 }
 
+#associated-companies-h1 {
+    padding-top: 0px;
+    z-index: 1000;
+}
+.associated-companies-container {
+    padding: 0px 0px 0px 0px;
+}
+
 #gis-para { 
     font-weight: bold;
     text-align: center;
@@ -534,7 +538,7 @@ ul {
 
 .associated-companies-container-block {
     padding-top: 25px;
-    min-height: 320px;
+    min-height: 340px;
 }
 
 
@@ -544,6 +548,16 @@ ul {
     }
 }
 
+#team-capabilities-h1 {
+    padding-top: 0px;
+    padding-bottom: 96px;
+}
+
+@media (max-width: 768px) {
+    #team-capabilities-h1 {
+        padding-bottom: 71px;
+    }
+}
 
 .team-capabilities-left-section p {
     color: #fff;
@@ -815,11 +829,6 @@ ul {
     }
 }
 
-.associated-companies-section > h1 {
-    padding: 0px;
-    margin: 0px;
-}
-
 .footer {
     background-image: url("../images/hero_image.jpg");
     background-repeat: no-repeat;
@@ -919,7 +928,7 @@ ul {
 
 @media (max-width: 768px) {
    .shapes-company {
-        top: -150px;
+        top: -50px;
         right: 0px;
         width: 400px;
         height: 500px;
