@@ -158,7 +158,7 @@ function slider() {
     const paraDict = {
         "group 1": ["Establishing 2 MFS companies from scratch", "Strong tie with existing partners", "Own distribution business"],
         "group 2": ["20+yrs Experience from wireless to cash less", "Team experience in MFS/ Telecom/FMCG", "Partnership with Fis/ Telecom / MFS"],
-        "group 3": ["Association with global tech partners", "ERP & Apps(KIU)", "GIS platform (ESRI)"],
+        "group 3": ["Association with global tech partners", "ERP & Apps(KIU)", "GIS platform"],
     };
     
     
